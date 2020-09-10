@@ -1,6 +1,7 @@
 # Tarea1-INF331
-Dependencias: Python 3, modulo datetime
-Instrucciones:
+**Dependencias:** Python 3, modulo datetime
+
+**Instrucciones:**
 Navegar hasta el directorio donde está el archivo.py y ejecutar de la siguiente forma:
 
 ```
