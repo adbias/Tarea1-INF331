@@ -1,5 +1,9 @@
 from datetime import datetime
 
+# Config
+manual = False
+
+# App
 class Tarea1:
     def compareStrings(self, a, b):
         if type(a) == type(b) and type(b) == str:
@@ -20,34 +24,33 @@ class Tarea1:
         self.logFile = logFile
         self.log(logFile, "=====NEW INSTANCE=====")
 
-
 # Iniciar
 T = Tarea1("log.txt")
 
 # Caso 1
 print("Caso 1")
 print("String A: ")
-a = input()
+a = input() if manual else a = "Hola"
 print("String B: ")
-b = input()
+b = input() if manual else b = "Q"
 
 T.compareStrings(a,b)
 
 # Caso 2
 print("Caso 2")
 print("String A: ")
-a = input()
+a = input() if manual else a = "Q"
 print("String B: ")
-b = input()
+b = input() if manual else b = "Hola"
 
 T.compareStrings(a,b)
 
 # Caso 3
 print("Caso 3")
 print("String A: ")
-a = input()
+a = input() if manual else a = "Hola"
 print("String B: ")
-b = input()
+b = input() if manual else b = "Hola"
 
 T.compareStrings(a,b)
 
