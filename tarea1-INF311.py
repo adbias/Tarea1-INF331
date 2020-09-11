@@ -8,13 +8,14 @@ class Tarea1:
     def compareStrings(self, a, b):
         if type(a) == type(b) and type(b) == str:
             if len(a) < len(b):
-                self.log(self.logFile, "B is bigger\n")
+                self.log(self.logFile, "B is bigger, a:%s, b:%s\n" % (a,b))
                 return b
             else:
-                self.log(self.logFile, "A is bigger\n")
+                self.log(self.logFile, "A is bigger, a:%s, b:%s\n" % (a,b))
                 return a
         else:
-            self.log(self.logFile, "[E]One of the arguments is not a string.\n")
+            self.log(self.logFile, "[E]One of the arguments is not a string. %s %s\n" % (a,b))
+            return None
 
     def log(self, name, text):
         i = open(name, "a+")
